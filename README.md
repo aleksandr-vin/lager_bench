@@ -22,12 +22,11 @@ Comparing of the 'sync' vs. 'async 'version of `lager:dispatch_log/8` shown that
 
 ### Conclusion
 
-Seems that there should be an option for the user/developer: which kind the lager should be.
-
 Now there is an **app env** named `sync_dispatch_log` that allows to
 choose the subject behaviour. Access to its value is cached into
 process dictionary but it seems that a compile-time switch should be
-provided too: it will remove the unnesassary checks.
+provided too: it will remove the unnesassary checks for those who
+don't need the run-time sync/async change.
 
 ### Results of the benchmark
 
