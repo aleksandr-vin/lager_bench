@@ -1,0 +1,5 @@
+#!/bin/bash -v
+
+NODE='bencharka@localhost'
+
+erl -sname ${NODE} -noshell +A 0 -pz ../deps/*/ebin -s bencharka start 5 -s bencharka stop
